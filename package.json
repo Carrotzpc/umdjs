@@ -24,6 +24,8 @@
     "lint:style": "stylelint --allow-empty-input \"{docs,packages}/**/*.{css,less,js,jsx,ts,tsx}\"",
     "prepare": "husky install",
     "prettier": "prettier -c --write \"**/**\"",
+    "release": "multi-semantic-release",
+    "release:local": "multi-semantic-release --no-ci",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
