@@ -1,0 +1,37 @@
+{
+  "name": "@umdjs/query-string",
+  "version": "1.0.0-beta.1",
+  "description": "UMD build dist for query-string.",
+  "keywords": [
+    "UMD",
+    "query-string"
+  ],
+  "homepage": "https://yuntijs.github.io/lowcode-tools/packages/lowcode-i18n-extract",
+  "bugs": {
+    "url": "https://github.com/Carrotzpc/umdjs/issues/new"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Carrotzpc/umdjs.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "dev": "cross-env NODE_ENV=development father dev",
+    "prepublishOnly": "father doctor && npm run build",
+    "test": "jest",
+    "test:cov": "jest --collectCoverage"
+  },
+  "dependencies": {
+    "query-string": "^9.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
