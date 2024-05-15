@@ -1,6 +1,6 @@
 {
   "name": "@umdjs/query-string",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "UMD build dist for query-string.",
   "keywords": [
     "UMD",
